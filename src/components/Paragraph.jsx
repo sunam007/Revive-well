@@ -2,13 +2,13 @@ import React from "react";
 
 const Paragraph = ({
   children,
-  size = "text-base",
+  fontSize = "text-lg",
   fontWeight = "font-medium",
   textColor = "text-black",
-  lineHeight = "leading-normal",
+  lineHeight = "leading-relaxed",
 }) => {
   return (
-    <p className={`${size} ${fontWeight} ${textColor} ${lineHeight}`}>
+    <p className={`${fontSize} ${fontWeight} ${textColor} ${lineHeight}`}>
       {children}
     </p>
   );

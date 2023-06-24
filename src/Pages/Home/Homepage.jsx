@@ -1,11 +1,9 @@
-import Headline from "../../components/Headline";
-import Paragraph from "../../components/Paragraph";
-import Subtitle from "../../components/Subtitle";
+import Hero from "./Hero";
 
 const Homepage = () => {
   return (
-    <div>
-      <Headline>This is homepage</Headline>
+    <div className="max-w-6xl mx-auto">
+      <Hero />
     </div>
   );
 };
