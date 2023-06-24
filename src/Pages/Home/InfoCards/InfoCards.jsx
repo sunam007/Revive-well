@@ -1,6 +1,6 @@
-import clock from "../../assets/icons/clock.png";
-import marker from "../../assets/icons/marker.png";
-import phone from "../../assets/icons/phone.png";
+import clock from "../../../assets/icons/clock.png";
+import marker from "../../../assets/icons/marker.png";
+import phone from "../../../assets/icons/phone.png";
 
 import InfoCard from "./InfoCard";
 

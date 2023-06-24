@@ -1,4 +1,4 @@
-import InfoCards from "../../InfoCards/InfoCards";
+import InfoCards from "../InfoCards/InfoCards";
 
 import Hero from "../Hero/Hero";
 

@@ -1,6 +1,5 @@
-import icon from "../../assets/icons/clock.svg";
-import Paragraph from "../../components/Paragraph";
-import Subtitle from "../../components/Subtitle";
+import Paragraph from "../../../components/Paragraph";
+import Subtitle from "../../../components/Subtitle";
 const InfoCard = ({ card }) => {
   const { title, description, bgColorClass, textColorClass, icon } = card;
 
@@ -14,7 +13,9 @@ const InfoCard = ({ card }) => {
       </figure>
       <div className="card-body">
         <Subtitle fontSize="text-sm">{title}</Subtitle>
-        <Paragraph fontSize="text-sm">{description}</Paragraph>
+        <Paragraph fontSize="text-sm" lineHeight="leading-loose">
+          {description}
+        </Paragraph>
       </div>
     </div>
   );
