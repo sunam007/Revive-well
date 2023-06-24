@@ -4,9 +4,12 @@ import Footer from "./Pages/Shared/Footer/Footer";
 
 function App() {
   return <>
-  <Navbar/>
-  <Main/>
-  <Footer/>
+  <div className="max-w-[1440px] mx-auto">
+      <Navbar/>
+      <Main/>
+      <Footer/>
+  </div>
+
   </>;
 }
 
