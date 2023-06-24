@@ -1,36 +1,78 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css"
+import "./Navbar.css";
 
 const Navbar = () => {
+  const navItems = (
+    <>
+      <li>
+        <Link className="hover-underline-nav-link" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/about">
+          About
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/services">
+          Services
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/appointment">
+          Appointment
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/reviews">
+          Reviews
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/contact">
+          Contact
+        </Link>
+      </li>
+      <li>
+        <Link className="hover-underline-nav-link" to="/login">
+          Login
+        </Link>
+      </li>
+    </>
+  );
 
-  const navItems = 
-  <>
-      <li><Link className="hover-underline-nav-link" to="/">Home</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/about">About</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/services">Services</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/appointment">Appointment</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/reviews">Reviews</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/contact">Contact</Link></li>
-      <li><Link className="hover-underline-nav-link" to="/login">Login</Link></li>  
-  </>
-  
   return (
     <div className="navbar bg-green-100 text-green-950 h-16">
       <div className="navbar-start">
-          <div className="dropdown">
+        <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
           </label>
-          <ul tabIndex={0} className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-100 text-green-950 w-52">
-          {navItems}
-          </ul>
-          </div>
-          <a className="lg:ml-24 text-xl hover:cursor-pointer">Revive Well</a>
-      </div>
-      <div className="navbar-end lg:mr-24 hidden lg:flex">
-          <ul className="menu-horizontal space-x-4 px-1">
+          <ul
+            tabIndex={0}
+            className="menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-100 text-green-950 w-52"
+          >
             {navItems}
           </ul>
+        </div>
+        <a className="lg:ml-24 text-xl hover:cursor-pointer">Revive Well</a>
+      </div>
+      <div className="navbar-end lg:mr-24 hidden lg:flex">
+        <ul className="menu-horizontal space-x-4 px-1">{navItems}</ul>
       </div>
     </div>
   );
