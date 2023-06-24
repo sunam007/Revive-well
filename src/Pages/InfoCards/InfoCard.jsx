@@ -1,15 +1,20 @@
 import icon from "../../assets/icons/clock.svg";
+import Paragraph from "../../components/Paragraph";
+import Subtitle from "../../components/Subtitle";
 const InfoCard = ({ card }) => {
   const { title, description, bgColorClass, textColorClass, icon } = card;
 
   return (
-    <div className="card lg:card-side rounded-sm shadow-xl bg-teal-400 m-4 max-w-sm">
+    <div
+      className={`card lg:card-side rounded-sm shadow-xl  max-w-md  
+      ${bgColorClass}  ${textColorClass} `}
+    >
       <figure>
-        <img src={icon} className="p-4" alt="information card" />
+        <img src={icon} className="w-20 p-4" alt="information card" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">This is title</h2>
-        <p>This is a paragraph</p>
+        <Subtitle fontSize="text-sm">{title}</Subtitle>
+        <Paragraph fontSize="text-sm">{description}</Paragraph>
       </div>
     </div>
   );
