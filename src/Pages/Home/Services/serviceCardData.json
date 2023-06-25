@@ -1,0 +1,50 @@
+ [
+    {
+      "id": "01",
+      "title": "Individual Therapy",
+      "description": "One-on-one counseling sessions tailored to address personal mental health concerns and promote emotional well-being.",
+      "image": "individual_therapy.jpg"
+    },
+    {
+      "id": "02",
+      "title": "Group Therapy",
+      "description": "Therapeutic sessions facilitated by a trained professional, bringing together individuals facing similar challenges to share experiences and gain support.",
+      "image": "group_therapy.jpg"
+    },
+    {
+      "id": "03",
+      "title": "Psychiatric Evaluation and Medication Management",
+      "description": "Assessment of mental health conditions by a psychiatrist, followed by personalized treatment plans and ongoing medication management.",
+      "image": "medication_management.jpg"
+    },
+    {
+      "id": "04",
+      "title": "Cognitive Behavioral Therapy (CBT)",
+      "description": "Evidence-based therapy focusing on identifying and modifying negative thoughts, beliefs, and behaviors to alleviate symptoms and improve coping mechanisms.",
+      "image": "cognitive_behavioral_therapy.jpg"
+    },
+    {
+      "id": "05",
+      "title": "Family Counseling",
+      "description": "Guided sessions involving family members to enhance communication, resolve conflicts, and foster a supportive environment for individuals experiencing mental health issues.",
+      "image": "family_counseling.jpg"
+    },
+    {
+      "id": "06",
+      "title": "Stress and Anxiety Management",
+      "description": "Techniques and strategies to reduce stress and manage anxiety effectively, helping individuals regain control and achieve a greater sense of calm.",
+      "image": "stress_anxiety_management.jpg"
+    },
+    {
+      "id": "07",
+      "title": "Trauma-Informed Therapy",
+      "description": "Specialized therapy aimed at addressing the impact of past traumatic experiences, facilitating healing, and promoting resilience.",
+      "image": "trauma_informed_therapy.jpg"
+    },
+    {
+      "id": "08",
+      "title": "Mindfulness and Meditation Training",
+      "description": "Practices that cultivate present-moment awareness, enhance relaxation, and improve overall mental well-being.",
+      "image": "mindfulness_meditation_training.jpg"
+    }
+  ]
