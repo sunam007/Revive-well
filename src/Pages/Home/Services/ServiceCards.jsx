@@ -1,8 +1,6 @@
-import React from "react";
-import Paragraph from "../../../components/Paragraph";
-import Subtitle from "../../../components/Subtitle";
 import Title from "../../../components/Title";
 import ServiceCard from "./ServiceCard";
+import data from "./serviceCardData.json";
 
 const ServiceCards = () => {
   return (
@@ -16,12 +14,9 @@ const ServiceCards = () => {
         </Paragraph> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {data.map((service) => (
+          <ServiceCard key={service.id} service={service} />
+        ))}
       </div>
     </section>
   );
