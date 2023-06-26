@@ -1,0 +1,142 @@
+[
+  {
+    "id": "01",
+    "name": "Dr. Mohammad Rahman",
+    "specialization": "Psychiatrist",
+    "service": "Individual Therapy",
+    "image": "https://i.ibb.co/nnfJ1JT/male-doc-01.jpg"
+  },
+  {
+    "id": "02",
+    "name": "Dr. Farzana Ahmed",
+    "specialization": "Clinical Psychologist",
+    "service": "Group Therapy",
+    "image": "https://i.ibb.co/7W2SbDZ/female-doc-01.jpg"
+  },
+  {
+    "id": "03",
+    "name": "Dr. Mahmudul Hasan",
+    "specialization": "Couples Therapist",
+    "service": "Cognitive Behavioral Therapy (CBT)",
+    "image": "https://i.ibb.co/DpxvZFH/male-doc-02.jpg"
+  },
+  {
+    "id": "04",
+    "name": "Dr. Ayesha Khan",
+    "specialization": "Family Counselor",
+    "service": "Stress and Anxiety Management",
+    "image": "https://i.ibb.co/k9G9WTJ/female-doc-02.jpg"
+  },
+  {
+    "id": "05",
+    "name": "Dr. Abul Hasan",
+    "specialization": "Trauma-Informed Therapist",
+    "service": "Couple Therapy",
+    "image": "https://i.ibb.co/vQCVQ8T/male-doc-03.jpg"
+  },
+  {
+    "id": "06",
+    "name": "Dr. Nazia Ahmed",
+    "specialization": "Psychiatrist",
+    "service": "Psychiatric Evaluation and Medication Management",
+    "image": "https://i.ibb.co/zHHs3xs/female-doc-03.jpg"
+  },
+  {
+    "id": "07",
+    "name": "Dr. Rahman Hasan",
+    "specialization": "Clinical Psychologist",
+    "service": "Family Counseling",
+    "image": "https://i.ibb.co/QFWX5Cf/male-doc-04.jpg"
+  },
+  {
+    "id": "08",
+    "name": "Dr. Farhana Khan",
+    "specialization": "Couples Therapist",
+    "service": "Mindfulness and Meditation Training",
+    "image": "https://i.ibb.co/m93MCHm/female-doc-04.jpg"
+  },
+  {
+    "id": "09",
+    "name": "Dr. Mohammad Rahman",
+    "specialization": "Psychiatrist",
+    "service": "Group Therapy",
+    "image": "https://i.ibb.co/wJJV2bj/male-doc-05.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Dr. Ayesha Ahmed",
+    "specialization": "Clinical Psychologist",
+    "service": "Stress and Anxiety Management",
+    "image": "https://i.ibb.co/s6Jv45m/female-doc-05.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Dr. Abul Hasan",
+    "specialization": "Couples Therapist",
+    "service": "Individual Therapy",
+    "image": "https://i.ibb.co/DVmfJjQ/male-doc-06.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Dr. Nazia Rahman",
+    "specialization": "Psychiatrist",
+    "service": "Cognitive Behavioral Therapy (CBT)",
+    "image": "https://i.ibb.co/Cb0mTtG/female-doc-06.jpg"
+  },
+  {
+    "id": "13",
+    "name": "Dr. Rahman Ahmed",
+    "specialization": "Clinical Psychologist",
+    "service": "Family Counseling",
+    "image": "https://i.ibb.co/Yd30fh4/male-doc-07.jpg"
+  },
+  {
+    "id": "14",
+    "name": "Dr. Farhana Khan",
+    "specialization": "Couples Therapist",
+    "service": "Trauma-Informed Therapy",
+    "image": "https://i.ibb.co/8MBXCr4/female-doc-08.jpg"
+  },
+  {
+    "id": "15",
+    "name": "Dr. Mohammad Hasan",
+    "specialization": "Psychiatrist",
+    "service": "Individual Therapy",
+    "image": "https://i.ibb.co/5sy8LqQ/male-doc-08.jpg"
+  },
+  {
+    "id": "16",
+    "name": "Dr. Ayesha Rahman",
+    "specialization": "Clinical Psychologist",
+    "service": "Stress and Anxiety Management",
+    "image": "https://i.ibb.co/pWZ7GzW/female-doc-09.jpg"
+  },
+  {
+    "id": "17",
+    "name": "Dr. Abul Ahmed",
+    "specialization": "Family Counselor",
+    "service": "Group Therapy",
+    "image": "https://i.ibb.co/QJVzrbz/male-doc-09.jpg"
+  },
+  {
+    "id": "18",
+    "name": "Dr. Nazia Khan",
+    "specialization": "Trauma-Informed Therapist",
+    "service": "Cognitive Behavioral Therapy (CBT)",
+    "image": "https://i.ibb.co/1T10fJq/female-doc-10.jpg"
+  },
+  {
+    "id": "19",
+    "name": "Dr. Rahman Hasan",
+    "specialization": "Psychiatrist",
+    "service": "Family Counseling",
+    "image": "https://i.ibb.co/JrJ4fkd/male-doc-10.jpg"
+  },
+  {
+    "id": "20",
+    "name": "Dr. Farhana Ahmed",
+    "specialization": "Clinical Psychologist",
+    "service": "Mindfulness and Meditation Training",
+    "image": "https://i.ibb.co/Jy9Vzcv/female-doc-11.jpg"
+  }
+]
