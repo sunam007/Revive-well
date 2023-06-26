@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   extends: [
     // By extending from a plugin config, we can get recommended rules without having to add them manually.
@@ -24,5 +25,6 @@ module.exports = {
   },
   rules: {
     // Add your own rules here to override ones from the extended configs.
+    "react/prop-types": "off",
   },
 };

@@ -1,5 +1,4 @@
-import counselling from "../../../assets/images/counselling.jpg";
-import Button from "../../../components/Button";
+import React from "react";
 import Paragraph from "../../../components/Paragraph";
 import Subtitle from "../../../components/Subtitle";
 

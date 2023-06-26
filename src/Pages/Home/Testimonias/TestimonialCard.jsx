@@ -1,3 +1,4 @@
+import React from "react";
 import Paragraph from "../../../components/Paragraph";
 import Subtitle from "../../../components/Subtitle";
 
@@ -13,7 +14,7 @@ function TestimonialCard({ testimonial }) {
         <div className="flex space-x-4 items-center">
           <div className="avatar">
             <div className="w-16 rounded-full ring ring-teal-200 ring-offset-base-100 ring-inset-1 ">
-              <img src={image} />
+              <img src={image} alt="" />
             </div>
           </div>
 
