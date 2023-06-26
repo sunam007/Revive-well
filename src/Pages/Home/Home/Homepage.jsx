@@ -2,6 +2,7 @@ import InfoCards from "../InfoCards/InfoCards";
 
 import Hero from "../Hero/Hero";
 import ServiceCards from "../Services/ServiceCards";
+import TestimonialCards from "../Testimonias/TestimonialCards";
 
 const Homepage = () => {
   return (
@@ -9,6 +10,8 @@ const Homepage = () => {
       <Hero />
       <InfoCards />
       <ServiceCards />
+      <TestimonialCards />
+      <div className="divider"></div>
     </div>
   );
 };

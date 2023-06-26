@@ -6,7 +6,7 @@ import Subtitle from "../../../components/Subtitle";
 const ServiceCard = ({ service }) => {
   const { title, description, image } = service;
   return (
-    <div className="card card-compact card-bordered rounded-sm shadow-xl max-w-sm">
+    <div className="card card-compact card-bordered rounded-sm shadow-md max-w-sm">
       <figure>
         <img src={image} className="p-2" alt="Shoes" />
       </figure>

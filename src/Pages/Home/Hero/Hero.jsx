@@ -6,7 +6,7 @@ import Button from "../../../components/Button";
 
 function Hero() {
   return (
-    <div className="hero md:mt-16">
+    <div className="hero md:mt-8">
       <div className="hero-content flex-col lg:flex-row space-y-4 md:spcae-y-0 lg:space-x-12">
         <img
           src={hero}
