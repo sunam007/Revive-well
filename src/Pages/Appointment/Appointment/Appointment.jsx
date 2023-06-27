@@ -3,7 +3,7 @@ import AppointmentHero from "../AppointmentHero/AppointmentHero";
 
 const Appointment = () => {
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto">
       <AppointmentHero />
     </div>
   );

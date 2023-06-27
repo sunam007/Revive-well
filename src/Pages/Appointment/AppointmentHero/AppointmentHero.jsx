@@ -12,11 +12,11 @@ function AppointmentHero() {
     ""
   );
   return (
-    <div className="hero md:mt-8">
-      <div className="flex flex-col md:flex-row-reverse">
+    <div className="mt-8 mx-4">
+      <div className="flex flex-col lg:flex-row-reverse justify-center ">
         <img
           src={appointment_hero}
-          className="w-full md:max-w-md rounded-md shadow-sm"
+          className="w-full lg:max-w-lg rounded-md shadow-sm mb-8 lg:ml-16"
           alt="girl enjoying life"
         />
         <div className="rounded-md shadow-md h-96 text-teal-950">
