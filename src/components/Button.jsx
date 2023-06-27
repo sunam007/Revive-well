@@ -1,8 +1,8 @@
-import { Children } from "react";
+import React from "react";
 
 const Button = ({ children }) => {
   return (
-    <button className=" btn bg-green-400 hover:bg-green-300 text-green-950 text-base rounded-sm shadow-lg">
+    <button className=" btn bg-green-300 hover:bg-green-400 text-green-950 text-base rounded-sm shadow-md">
       {children}
     </button>
   );

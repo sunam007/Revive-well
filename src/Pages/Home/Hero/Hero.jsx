@@ -10,7 +10,7 @@ function Hero() {
       <div className="hero-content flex-col lg:flex-row space-y-4 md:spcae-y-0 lg:space-x-12">
         <img
           src={hero}
-          className=" w-full lg:w-1/2 rounded-none shadow-sm"
+          className="w-full lg:w-1/2 rounded-none shadow-sm"
           alt="girl enjoying life"
         />
 
