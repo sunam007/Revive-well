@@ -1,4 +1,7 @@
 .hover-underline-nav-link {
-@apply link link-hover hover:underline-offset-8 hover:decoration-2 hover:decoration-green-500
+  @apply link link-hover hover:underline-offset-8 hover:decoration-2 hover:decoration-green-500;
 }
 
+.active {
+  @apply link underline-offset-8 decoration-2 decoration-green-500;
+}

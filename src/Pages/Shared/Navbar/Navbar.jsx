@@ -1,43 +1,44 @@
-import { Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <Link className="hover-underline-nav-link" to="/">
+        <NavLink className="hover-underline-nav-link" to="/">
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/about">
+        <NavLink className="hover-underline-nav-link" to="/about">
           About
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/services">
+        <NavLink className="hover-underline-nav-link" to="/services">
           Services
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/appointment">
+        <NavLink className="hover-underline-nav-link" to="/appointment">
           Appointment
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/reviews">
+        <NavLink className="hover-underline-nav-link" to="/reviews">
           Reviews
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/contact">
+        <NavLink className="hover-underline-nav-link" to="/contact">
           Contact
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link className="hover-underline-nav-link" to="/login">
+        <NavLink className="hover-underline-nav-link" to="/login">
           Login
-        </Link>
+        </NavLink>
       </li>
     </>
   );
