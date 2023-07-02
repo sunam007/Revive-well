@@ -3,24 +3,23 @@ import { Link } from "react-router-dom";
 import Paragraph from "../../../components/Paragraph";
 import Subtitle from "../../../components/Subtitle";
 
-const ServiceCard = ({ service }) => {
-  const { title, description, image } = service;
-
+const Doctor = ({ doctor }) => {
+  const { name, specialization, image } = doctor;
   return (
-    <div className="card card-compact card-bordered rounded-sm shadow-md max-w-sm">
+    <div className="card card-compact card-bordered rounded-sm shadow-md md:w-72">
       <figure>
-        <img src={image} className="p-2" alt="Shoes" />
+        <img src={image} className="p-2" alt="doctor" />
       </figure>
 
       <div className="card-body bg-green-100">
-        <Subtitle>{title}</Subtitle>
+        <Subtitle>{name}</Subtitle>
 
         <Paragraph fontSize="text-base" lineHeight="leading-normal">
-          {description}
+          {specialization}
         </Paragraph>
       </div>
       <div className="card-actions justify-start p-4 bg-green-100">
-        <Link to={`/doctors/${title}`}>
+        <Link>
           <button className="btn bg-green-300 hover:bg-green-200 text-base font-medium text-green-950 rounded-md">
             Book Appointment
           </button>
@@ -30,4 +29,4 @@ const ServiceCard = ({ service }) => {
   );
 };
 
-export default ServiceCard;
+export default Doctor;

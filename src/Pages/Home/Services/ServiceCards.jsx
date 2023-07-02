@@ -1,6 +1,7 @@
+import React from "react";
 import Title from "../../../components/Title";
 import ServiceCard from "./ServiceCard";
-import data from "./serviceCardData.json";
+import services from "../../../data/services.json";
 
 const ServiceCards = () => {
   return (
@@ -10,7 +11,7 @@ const ServiceCards = () => {
       </Title>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {data.map((service) => (
+        {services.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
