@@ -2,8 +2,8 @@ import React from "react";
 
 const Login = () => {
   return (
-    <section className="flex justify-center items-center">
-      <div className="card w-96 bg-base-100 shadow-xl">
+    <section className="h-[600px] flex justify-center items-center">
+      <div className="card w-96 bg-base-100 rounded-md shadow-xl ">
         <div className="card-body">
           <h2 className="card-title text-center">Login</h2>
           <div className="divider"></div>
