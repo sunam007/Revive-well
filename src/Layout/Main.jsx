@@ -6,6 +6,7 @@ import Appointment from "../Pages/Appointment/Appointment/Appointment";
 import NotFound from "../Pages/NotFound/NotFound";
 import DoctorsHome from "../Pages/Doctors/DoctorsHome/DoctorsHome";
 import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const Main = () => {
   return (
@@ -14,7 +15,7 @@ const Main = () => {
       <Route path="/doctors/:serviceTitle" element={<DoctorsHome />} />
       <Route path="/appointment" element={<Appointment />} />
       <Route path="/login" element={<Login />} />
-
+      <Route path="/register" element={<Register />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
