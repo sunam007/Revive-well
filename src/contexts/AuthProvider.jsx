@@ -9,9 +9,9 @@ const AuthProvider = ({ children }) => {
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
-  const userInfo = { createUser };
+  const authInfo = { createUser };
   return (
-    <AuthContext.Provider value={userInfo}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
 };
 
