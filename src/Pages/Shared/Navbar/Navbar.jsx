@@ -1,8 +1,18 @@
 import React from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthProvider";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { user, signOutUser } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    signOutUser()
+      .then(() => {})
+      .catch((err) => console.log(err));
+  };
+
   const navItems = (
     <>
       <li>
@@ -25,21 +35,20 @@ const Navbar = () => {
           Appointment
         </NavLink>
       </li>
-      <li>
-        <NavLink className="hover-underline-nav-link" to="/reviews">
-          Reviews
-        </NavLink>
-      </li>
-      <li>
-        <NavLink className="hover-underline-nav-link" to="/contact">
-          Contact
-        </NavLink>
-      </li>
-      <li>
-        <NavLink className="hover-underline-nav-link" to="/login">
-          Login
-        </NavLink>
-      </li>
+
+      {user?.uid ? (
+        <li>
+          <button className="logout-button" onClick={handleSignOut}>
+            Logout
+          </button>
+        </li>
+      ) : (
+        <li>
+          <NavLink className="hover-underline-nav-link" to="/login">
+            Login
+          </NavLink>
+        </li>
+      )}
     </>
   );
 

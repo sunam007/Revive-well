@@ -5,3 +5,7 @@
 .active {
   @apply link underline-offset-8 decoration-2 decoration-green-500;
 }
+
+.logout-button {
+  @apply text-red-400 hover:text-red-500 hover:btn-link hover:underline-offset-8 hover:decoration-2 hover:decoration-red-500;
+}
