@@ -1,6 +1,7 @@
 import Title from "../../../components/Title";
 import TestimonialCard from "./TestimonialCard";
-import data from "./testimonialData.json";
+// import data from "./testimonialData.json";
+import data from "../../../data/testimonialData.json";
 import quote from "../../../assets/icons/quote.svg";
 
 function TestimonialCards() {

@@ -1,5 +1,10 @@
 // eslint-disable-next-line no-undef
 module.exports = {
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
   extends: [
     // By extending from a plugin config, we can get recommended rules without having to add them manually.
     "eslint:recommended",

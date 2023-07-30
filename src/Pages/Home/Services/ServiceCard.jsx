@@ -22,7 +22,7 @@ const ServiceCard = ({ service }) => {
       <div className="card-actions justify-start p-4 bg-green-100">
         <Link to={`/doctors/${title}`}>
           <button className="btn bg-green-300 hover:bg-green-200 text-base font-medium text-green-950 rounded-md">
-            Book Appointment
+            Available Doctors
           </button>
         </Link>
       </div>

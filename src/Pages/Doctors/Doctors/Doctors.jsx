@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+import doctorsData from "../../../data/doctors.json";
 import Doctor from "./Doctor";
 
 const Doctors = () => {
@@ -8,10 +10,11 @@ const Doctors = () => {
   const { serviceTitle } = useParams();
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:9999/doctors?service=${serviceTitle}`)
-      .then((res) => setDoctors(res.data))
-      .catch((err) => console.error(err));
+    const filteredDoctors = doctorsData.filter(
+      (doctor) => doctor.service === serviceTitle
+    );
+
+    setDoctors(filteredDoctors);
   }, []);
   return (
     <section className="mt-16 md:mt-16 mx-4 space-y-8">
@@ -23,5 +26,7 @@ const Doctors = () => {
     </section>
   );
 };
+
+// `http://localhost:9999/doctors?service=${serviceTitle}`
 
 export default Doctors;

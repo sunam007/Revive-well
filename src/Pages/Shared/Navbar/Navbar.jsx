@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthProvider";
 import "./Navbar.css";
 
@@ -79,7 +79,9 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <a className="lg:ml-24 text-xl hover:cursor-pointer">Revive Well</a>
+        <Link to="/" className="lg:ml-24 text-xl hover:cursor-pointer">
+          Revive Well
+        </Link>
       </div>
       <div className="navbar-end lg:mr-24 hidden lg:flex">
         <ul className="menu-horizontal space-x-4 px-1">{navItems}</ul>
