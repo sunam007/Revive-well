@@ -36,7 +36,7 @@ const Navbar = () => {
         </NavLink>
       </li>
 
-      {user?.uid ? (
+      {/* {user?.uid ? (
         <li>
           <button className="logout-button" onClick={handleSignOut}>
             Logout
@@ -48,7 +48,7 @@ const Navbar = () => {
             Login
           </NavLink>
         </li>
-      )}
+      )} */}
     </>
   );
 
@@ -83,8 +83,28 @@ const Navbar = () => {
           Revive Well
         </Link>
       </div>
-      <div className="navbar-end lg:mr-24 hidden lg:flex">
+      <div className="navbar-center  hidden lg:flex">
         <ul className="menu-horizontal space-x-4 px-1">{navItems}</ul>
+      </div>
+      <div className="navbar-end  lg:flex space-x-4 mr-4">
+        {/* Avatar shows only when logged in */}
+
+        {user?.uid && (
+          <span className="border-2 p-2 rounded truncate border-emerald-500">
+            {/* {user?.email} */}
+            asaduzzaman.sunam@gmail.com
+          </span>
+        )}
+        {/* Logout button shows only when user logged in */}
+        {user?.uid ? (
+          <button className="logout-button" onClick={handleSignOut}>
+            Logout
+          </button>
+        ) : (
+          <NavLink className="hover-underline-nav-link" to="/login">
+            Login
+          </NavLink>
+        )}
       </div>
     </div>
   );
