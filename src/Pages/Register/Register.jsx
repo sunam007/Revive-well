@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { useContext } from "react";
+import toast from "react-hot-toast";
 import { AuthContext } from "../../contexts/AuthProvider";
 
 const Register = () => {
@@ -13,11 +13,18 @@ const Register = () => {
   //Auth Context
   const { createUser } = useContext(AuthContext);
 
+  const navigate = useNavigate();
+
   const onFormSubmit = (formData) => {
     createUser(formData.email, formData.password)
-      .then((result) => console.log(result.user))
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Registration Successfull");
+        navigate("/login");
+      })
       .catch((err) => {
         console.log(err.message);
+        toast.error(err.message);
       });
   };
   return (

@@ -3,11 +3,15 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { AuthContext } from "../../contexts/AuthProvider";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const Login = () => {
+  const [firebaseError, setFirebaseError] = useState("");
   const form = useForm();
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = form;
@@ -27,9 +31,18 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
 
+        toast.success("Successfully Logged In");
+
         navigate(from, { replace: true });
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => {
+        console.log(err.message);
+        setFirebaseError(err.message);
+
+        toast.error(firebaseError);
+        // reset function from react-hook-form
+        reset();
+      });
   };
   return (
     <section className="h-[600px] flex justify-center items-center">

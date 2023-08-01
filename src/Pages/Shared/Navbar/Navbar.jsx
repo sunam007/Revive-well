@@ -91,8 +91,7 @@ const Navbar = () => {
 
         {user?.uid && (
           <span className="border-2 p-2 rounded truncate border-emerald-500">
-            {/* {user?.email} */}
-            asaduzzaman.sunam@gmail.com
+            {user?.email}
           </span>
         )}
         {/* Logout button shows only when user logged in */}
