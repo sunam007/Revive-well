@@ -24,7 +24,8 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.1",
     "react-hot-toast": "^2.4.1",
-    "react-router-dom": "^6.13.0"
+    "react-router-dom": "^6.13.0",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@hookform/devtools": "^4.3.1",

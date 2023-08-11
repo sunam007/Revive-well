@@ -3,6 +3,7 @@ import hero from "../../../assets/images/hero.jpg";
 import Paragraph from "../../../components/Paragraph";
 import Title from "../../../components/Title";
 import Button from "../../../components/Button";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Hero() {
   return (
@@ -24,7 +25,9 @@ function Hero() {
             of well-being.
           </Paragraph>
           <div>
-            <Button>Book Appointment</Button>
+            <Link to="/#booking" smooth>
+              <Button>Book Appointment</Button>
+            </Link>
           </div>
         </div>
       </div>

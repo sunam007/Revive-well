@@ -5,7 +5,7 @@ import services from "../../../data/services.json";
 
 const ServiceCards = () => {
   return (
-    <section className="mt-16 md:mt-32 mx-4 space-y-8">
+    <section className="mt-16 md:mt-32 mx-4 space-y-8" id="booking">
       <Title fontWeight="font-medium">
         Book appointment for an in-clinic consultation
       </Title>
