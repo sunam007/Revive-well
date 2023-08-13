@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import Paragraph from "../../../components/Paragraph";
 import Subtitle from "../../../components/Subtitle";
 
-const Doctor = ({ doctor }) => {
+const Doctor = ({ doctor, setBookedDoctor }) => {
   const { name, specialization, image } = doctor;
+
+  const handleBookAppointment = (doctorName) => {
+    window.booking_modal.showModal();
+    setBookedDoctor(doctorName);
+  };
   return (
     <div className="card card-compact card-bordered rounded-sm shadow-md md:w-72">
       <figure>
@@ -19,11 +24,14 @@ const Doctor = ({ doctor }) => {
         </Paragraph>
       </div>
       <div className="card-actions justify-start p-4 bg-green-100">
-        <Link>
-          <button className="btn bg-green-300 hover:bg-green-200 text-base font-medium text-green-950 rounded-md">
-            Book Appointment
-          </button>
-        </Link>
+        <button
+          onClick={() => {
+            handleBookAppointment(name);
+          }}
+          className="btn bg-green-300 hover:bg-green-200 text-base font-medium text-green-950 rounded-md"
+        >
+          Book Appointment
+        </button>
       </div>
     </div>
   );

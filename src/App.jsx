@@ -1,6 +1,7 @@
 import React from "react";
 import { Toaster } from "react-hot-toast";
-import "react-day-picker/dist/style.css";
+import "react-datepicker/dist/react-datepicker.css";
+
 import Navbar from "./Pages/Shared/Navbar/Navbar";
 import Main from "../src/Layout/Main";
 import Footer from "./Pages/Shared/Footer/Footer";

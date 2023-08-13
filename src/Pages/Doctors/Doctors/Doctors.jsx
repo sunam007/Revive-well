@@ -5,9 +5,11 @@ import { useParams } from "react-router-dom";
 import doctorsData from "../../../data/doctors.json";
 import Doctor from "./Doctor";
 import Title from "../../../components/Title";
+import BookingModal from "../BookingModal/BookingModal";
 
 const Doctors = () => {
   const [doctors, setDoctors] = useState([]);
+  const [bookedDoctor, setBookedDoctor] = useState("");
   const { serviceTitle } = useParams();
 
   useEffect(() => {
@@ -25,9 +27,14 @@ const Doctors = () => {
 
       <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-4">
         {doctors.map((doctor) => (
-          <Doctor key={doctor.id} doctor={doctor} />
+          <Doctor
+            key={doctor.id}
+            doctor={doctor}
+            setBookedDoctor={setBookedDoctor}
+          />
         ))}
       </div>
+      <BookingModal bookedDoctor={bookedDoctor} />
     </section>
   );
 };
